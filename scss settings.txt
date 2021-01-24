@@ -1,0 +1,3 @@
+arguments: --update $FileName$:$ProjectFileDir$/css/$FileNameWithoutExtension$.css
+
+output: $ProjectFileDir$/css/$FileNameWithoutExtension$.css
