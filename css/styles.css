@@ -89,6 +89,86 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   flex: 1 1 auto;
 }
+.content .work__container {
+  height: 400px;
+}
+.content .work__container .work__row {
+  display: flex;
+  flex-direction: row;
+}
+.content .work__container .work__row .work_element:first-child {
+  box-shadow: none;
+}
+.content .work__container .work__row .work_element:last-child {
+  box-shadow: none;
+}
+.content .work__container .work__row .work_element {
+  flex: 0 0 33.333%;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 180px;
+  /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
+  box-shadow: 3px 5px 5px #eeefef;
+}
+.content .work__container .work__row .work_element img {
+  margin-top: 80px;
+}
+.content .work__container .work__row .work_element .work_element_title {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  color: #2c4755;
+  margin-top: 50px;
+}
+.content .work__container .work__row .work_element .work_element_description {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #575757;
+  margin-top: 35px;
+}
+
+header .header__navbar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+header .header__navbar .header_burger {
+  margin-right: 100px;
+}
+header .header__container {
+  background-color: #f6f6f6;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header__container .header__body .header__text {
+  margin-top: 50px;
+}
+header .header__container .header__body .header__text .header__hello {
+  color: #19c2b0;
+  font-size: 55px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+header .header__container .header__body .header__text .header__description {
+  margin-top: 60px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+header .header__container .header__body .header__text .header__description .header__description_element {
+  margin-bottom: 20px;
+}
+header .header__container .header__body .header__text .header__description .header__description_element:last-child {
+  margin-bottom: 0px;
+}
 
 /*footer*/
 footer {
