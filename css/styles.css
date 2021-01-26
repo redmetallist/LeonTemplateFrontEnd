@@ -126,6 +126,65 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   color: #575757;
   margin-top: 35px;
+  margin-bottom: 70px;
+}
+.content .services {
+  margin-top: 30px;
+}
+.content .services .services__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.content .services .services__header .services__header_title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 161px;
+  color: #f6f6f6;
+}
+.content .services .services__header .services__header_subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #575757;
+  margin-top: -40px;
+}
+.content .services .services__body {
+  display: flex;
+}
+.content .services .services__body .services__row {
+  flex: 0 0 33.333%;
+}
+.content .services .services__body .services__row .services__element {
+  display: flex;
+  margin-bottom: 50px;
+  padding-right: 60px;
+}
+.content .services .services__body .services__row .services__element .services__img {
+  margin-right: 50px;
+}
+.content .services .services__body .services__row .services__element .services__text .services__body_title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #1f2021;
+  margin-bottom: 40px;
+}
+.content .services .services__body .services__row .services__element .services__text .services__body_description {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #4d4c4c;
+}
+.content .services .services__body .services__row .services__element .services__img_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+}
+.content .services .services__body .services__row .services__row:last-child {
+  padding-right: 0px;
 }
 
 header .header__navbar {
