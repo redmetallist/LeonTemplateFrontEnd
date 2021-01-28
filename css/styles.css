@@ -89,12 +89,29 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   flex: 1 1 auto;
 }
-.content .work__container {
-  height: 400px;
+.content .header__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.content .header__block .block__header {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 161px;
+  color: #f6f6f6;
+}
+.content .header__block .block__subheader {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #575757;
+  margin-top: -40px;
 }
 .content .work__container .work__row {
   display: flex;
   flex-direction: row;
+  height: 400px;
 }
 .content .work__container .work__row .work_element:first-child {
   box-shadow: none;
@@ -131,25 +148,6 @@ h1, h2, h3, h4, h5, h6 {
 .content .services {
   margin-top: 30px;
 }
-.content .services .services__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 150px;
-}
-.content .services .services__header .services__header_title {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 800;
-  font-size: 161px;
-  color: #f6f6f6;
-}
-.content .services .services__header .services__header_subtitle {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  color: #575757;
-  margin-top: -40px;
-}
 .content .services .services__body {
   display: flex;
 }
@@ -185,6 +183,113 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content .services .services__body .services__row .services__row:last-child {
   padding-right: 0px;
+}
+.content .portfolio__container {
+  background-color: #fafafa;
+}
+.content .portfolio__container .portfolio {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 1000px;
+}
+.content .portfolio__container .portfolio .portfolio__header {
+  color: #ebeced;
+  margin-top: 75px;
+}
+.content .portfolio__container .portfolio .portfolio__body .portfolio__row {
+  display: flex;
+  justify-content: space-between;
+}
+.content .portfolio__container .portfolio .portfolio__body .portfolio__row .portfolio__column {
+  flex: 0 1 33.333%;
+  margin-right: 40px;
+}
+.content .portfolio__container .portfolio .portfolio__body .portfolio__row .portfolio__column .portfolio__element .portfolio__text {
+  width: inherit;
+  background: #ffffff;
+  padding: 25px 70px 35px 10px;
+}
+.content .portfolio__container .portfolio .portfolio__body .portfolio__row .portfolio__column .portfolio__element .portfolio__text .portfolio__title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #1f2021;
+  margin-bottom: 20px;
+}
+.content .portfolio__container .portfolio .portfolio__body .portfolio__row .portfolio__column .portfolio__element .portfolio__text .portfolio__description {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #4d4c4c;
+}
+.content .about {
+  height: 850px;
+}
+.content .about .about__header {
+  margin-top: 95px;
+}
+.content .about .about__body {
+  display: flex;
+}
+.content .about .about__body .about__row {
+  flex: 0 0 50%;
+}
+.content .about .about__body .about__row .about__element img {
+  height: 455px;
+}
+.content .about .about__body .about__row .about__element .about__text .about__main {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  color: #334752;
+  margin-bottom: 60px;
+}
+.content .about .about__body .about__row .about__element .about__text .about__line {
+  border-top: 2px solid #38c9b9;
+  margin-bottom: 30px;
+  width: 50%;
+}
+.content .about .about__body .about__row .about__element .about__text .about__small {
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: #575757;
+  width: 83.333%;
+}
+.content .contact {
+  height: 720px;
+}
+.content .contact .contact__header {
+  color: #ebeced;
+  margin-top: 90px;
+}
+.content .contact .contact__body {
+  display: flex;
+}
+.content .contact .contact__body .contact__row {
+  flex: 0 0 60.26%;
+}
+.content .contact .contact__body .contact__row .contact__text .contact__title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+  letter-spacing: -3px;
+  color: #2c4755;
+  margin-bottom: 35px;
+}
+.content .contact .contact__body .contact__row .contact__text .contact__subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  padding-left: 40px;
+  letter-spacing: -3px;
+  color: #10cab7;
+}
+.content .contact .contact__body .contact__row .contact__text .contact__line {
+  border-top: 35px solid #ffffff;
+  width: 76.71%;
+  margin-top: -20px;
+  margin-bottom: 60px;
 }
 
 header .header__navbar {
