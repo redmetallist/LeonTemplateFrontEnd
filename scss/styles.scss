@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 
       .portfolio__header {
         color: #ebeced;
-        margin-top:75px;
+        margin-top: 75px;
       }
 
       .portfolio__body {
@@ -270,34 +270,40 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  .about{
+  .about {
     height: 850px;
-    .about__header{
+
+    .about__header {
       margin-top: 95px;
     }
-    .about__body{
+
+    .about__body {
       display: flex;
-      .about__row{
+
+      .about__row {
         flex: 0 0 50%;
 
-        .about__element{
-          img{
+        .about__element {
+          img {
             height: 455px;
           }
-          .about__text{
-            .about__main{
+
+          .about__text {
+            .about__main {
               font-size: 20px;
               font-family: 'Work Sans', sans-serif;
               font-weight: 800;
               color: #334752;
               margin-bottom: 60px;
             }
-            .about__line{
+
+            .about__line {
               border-top: 2px solid #38c9b9;
               margin-bottom: 30px;
               width: 50%;
             }
-            .about__small{
+
+            .about__small {
               font-size: 15px;
               font-family: 'Work Sans', sans-serif;
               font-weight: 400;
@@ -311,18 +317,23 @@ h1, h2, h3, h4, h5, h6 {
     }
 
   }
-  .contact{
+
+  .contact {
     height: 720px;
-    .contact__header{
+
+    .contact__header {
       color: #ebeced;
-      margin-top:90px;
+      margin-top: 90px;
     }
-    .contact__body{
+
+    .contact__body {
       display: flex;
-      .contact__row{
-flex: 0 0 60.26%;
-        .contact__text{
-          .contact__title{
+
+      .contact__row {
+        flex: 0 0 60.26%;
+
+        .contact__text {
+          .contact__title {
             font-family: 'Work Sans', sans-serif;
             font-weight: 800;
             font-size: 55px;
@@ -330,7 +341,8 @@ flex: 0 0 60.26%;
             color: #2c4755;
             margin-bottom: 35px;
           }
-          .contact__subtitle{
+
+          .contact__subtitle {
             font-family: 'Work Sans', sans-serif;
             font-weight: 800;
             font-size: 50px;
@@ -338,18 +350,40 @@ flex: 0 0 60.26%;
             letter-spacing: -3px;
             color: #10cab7;
           }
-          .contact__line{
+
+          .contact__line {
             border-top: 35px solid #ffffff;
             width: 76.71%;
             margin-top: -20px;
             margin-bottom: 60px;
           }
         }
+
+        .contact__social {
+          display: flex;
+          font-family: 'Work Sans', sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+          color: #334752;
+          margin-left: 100px;
+
+          .social__text {
+            margin-right: 40px;
+          }
+
+          .social__logo {
+            img {
+              padding-right: 30px;
+            }
+
+            img:last-child {
+              padding-right: 0px;
+            }
+          }
+        }
       }
     }
   }
-
-
 }
 
 header {

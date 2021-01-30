@@ -291,6 +291,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -20px;
   margin-bottom: 60px;
 }
+.content .contact .contact__body .contact__row .contact__social {
+  display: flex;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #334752;
+  margin-left: 100px;
+}
+.content .contact .contact__body .contact__row .contact__social .social__text {
+  margin-right: 40px;
+}
+.content .contact .contact__body .contact__row .contact__social .social__logo img {
+  padding-right: 30px;
+}
+.content .contact .contact__body .contact__row .contact__social .social__logo img:last-child {
+  padding-right: 0px;
+}
 
 header .header__navbar {
   background-color: #ffffff;
