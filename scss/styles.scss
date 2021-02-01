@@ -308,9 +308,7 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
       }
-
     }
-
   }
 
   .contact {
@@ -521,6 +519,24 @@ footer {
   .container {
     max-width: 1000px;
   }
+
+  .contact {
+
+    .contact__body {
+      display: flex;
+
+      .contact__row {
+
+        .contact__text {
+          .contact__line {
+            width: 540px !important;
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
 @media (max-width: 1200px) {
@@ -599,6 +615,34 @@ footer {
       }
     }
 
+
+    .about {
+      height: auto;
+      margin-bottom: 30px;
+
+      .about__header {
+        margin-top: 60px;
+      }
+
+      .about__body {
+        margin: 0 10px;
+
+        .about__row {
+          flex: 0 0 50%;
+
+          .about__element {
+            img {
+              max-width: 380px;
+            }
+          }
+        }
+
+        .about__row:last-child {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
   }
 }
 
@@ -669,6 +713,7 @@ footer {
         align-items: center;
       }
     }
+
     .portfolio__container {
 
       .portfolio {
@@ -682,6 +727,7 @@ footer {
           .portfolio__row {
             .portfolio__column {
               margin-right: 20px;
+
               .portfolio__element {
                 .portfolio__image img {
                   max-width: 200px;
@@ -756,6 +802,7 @@ footer {
         }
       }
     }
+
     .portfolio__container {
 
       .portfolio {
@@ -767,22 +814,117 @@ footer {
 
           .portfolio__row {
             display: flex;
-            flex-direction: column ;
+            flex-direction: column;
+
             .portfolio__column {
-              margin-right: 20px;
+              margin-right: 10px;
+
               .portfolio__element {
-                .portfolio__image img {
-                  max-width: 200px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                max-height: 250px;
+                margin-bottom: 10px;
+                width: auto;
+
+                .portfolio__image {
+                  max-height: 150px;
                 }
 
                 .portfolio__text {
-                  max-width: 200px;
+                  max-width: none;
                 }
               }
+
             }
 
             .portfolio__column:last-child {
-              margin-right: 0px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .about {
+      .about__header {
+        margin-top: 60px;
+      }
+
+      .about__body {
+        margin: 0 10px;
+
+        .about__row {
+          flex: 0 1 50%;
+
+          .about__element {
+            img {
+              max-width: 300px;
+              height: auto;
+            }
+
+            .about__text {
+              .about__main {
+                font-size: 15px;
+                margin-bottom: 30px;
+              }
+
+              .about__line {
+                margin-bottom: 20px;
+              }
+
+              .about__small {
+              }
+            }
+          }
+        }
+
+        .about__row:last-child {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+
+    .contact {
+      height: auto;
+      padding-bottom: 30px;
+
+      .contact__header {
+        margin-top: 90px;
+      }
+
+      .contact__body {
+        display: block;
+
+        .contact__row {
+          padding: 0 10px;
+
+          .contact__text {
+            .contact__title {
+              font-size: 45px;
+              letter-spacing: -3px;
+              margin-bottom: 35px;
+            }
+
+            .contact__subtitle {
+              font-size: 40px;
+              padding-left: 40px;
+              letter-spacing: -3px;
+            }
+
+            .contact__line {
+              width: 430px !important;
+            }
+          }
+
+          .contact__social {
+            font-size: 15px;
+            margin-left: 50px;
+
+            .social__text {
+              margin-right: 40px;
             }
           }
         }
@@ -863,6 +1005,117 @@ footer {
         }
       }
     }
+
+    .portfolio__container {
+      display: block;
+      max-width: none;
+
+      .portfolio {
+        height: auto !important;
+
+        .portfolio__header {
+          margin-top: 30px !important;
+        }
+
+        .portfolio__body {
+          display: block;
+
+          .portfolio__row {
+            flex: 0 0 33.333%;
+
+            .portfolio__column {
+
+              .portfolio__element {
+                .portfolio__image img {
+                  max-height: 100px;
+                  max-width: 100px;
+                }
+
+                .portfolio__text {
+                  height: auto !important;
+                  padding-right: 30px !important;
+                }
+              }
+            }
+
+            .portfolio__column:last-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .about {
+      .about__header {
+        margin-top: 40px;
+      }
+
+      .about__body {
+        display: block;
+        margin: 0 10px;
+
+        .about__row {
+          .about__element {
+
+            img {
+              display: none;
+            }
+          }
+        }
+
+        .about__row:last-child {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+    .contact {
+      .contact__header {
+        margin-top: 70px;
+      }
+      .contact__body {
+        .contact__row {
+          padding: 0 0;
+          .contact__text {
+            .contact__title {
+              font-size: 25px;
+              letter-spacing: -1px;
+              margin-bottom: 25px;
+            }
+
+            .contact__subtitle {
+              font-size: 20px;
+              padding-left: 20px;
+              letter-spacing: -1px;
+            }
+
+            .contact__line {
+              border-top: 15px solid #ffffff;
+              margin-top: -5px;
+              width: 225px !important;
+            }
+          }
+
+          .contact__social {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+            margin-left: 0;
+
+            .social__text {
+              letter-spacing: -1px;
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
+            .social__logo img{
+              padding-right: 10px;
+
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -882,16 +1135,11 @@ footer {
   }
 }
 
-@media (max-width: 275px) {
+@media (max-width: 300px) {
 
-  .wrapper {
+  body {
+    min-width: 300px;
     overflow-x: scroll;
-
-    .content {
-      .work__container {
-        overflow-y: scroll;
-      }
-    }
   }
 
 }
